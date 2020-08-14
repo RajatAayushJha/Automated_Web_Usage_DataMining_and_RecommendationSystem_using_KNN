@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>UPDATED|Home</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<!--Header-->
+	<ul class="topnav">
+		<h2>UPDATED</h2>
+  		<li><a href="#" onclick="openForm()" >Login</a>
+  			<div class="form-popup" id="myForm2">
+  					<form class="form-container">
+
+    				<label for="email"><b>Email</b></label><br>
+    				<input type="text" placeholder="email" required>
+
+    				<label for="psw"><b>Password</b></label><br>
+    				<input type="password" placeholder="Enter Password" required>
+
+    				<button type="submit" class="btn" onclick="openForm()"><a href="user1.html">Login</a></button>
+
+    				<button type="button" class="btn cancel" onclick="closeForm()"><a>Close</a></button>
+    				
+					</script>
+  					</form>
+  					<script>
+						function openForm() {
+  							document.getElementById("myForm2").style.display = "block";
+						}
+
+						function closeForm() {
+
+  							document.getElementById("myForm2").style.display = "none";
+						}
+					</script>
+				</div>
+  		</li>
+  		
+	</ul>
+
+	<!--Navbar-->
+	<ul class="nav" >
+		<li><a href="#">Home</a></li>
+		<li><a href="international.html">International</a></li>
+		<li><a href="politics.html">Politics</a></li>
+		<li><a href="sports.html">Sports</a></li>
+	</ul>
+
+	<!--News abstarction and add-->
+
+	<div class="row" class="abstraction" >
+		<div class="col-9" >
+			<div class="col-3" id="abs1" >
+				<p >Breaking News</p>
+			</div>
+			<div class="col-6" id="abs2" >
+				<p>SBI General Insurance sets target of 30% spike in premium collection<p>
+			</div>
+		</div>
+		
+		<div class="col-9" >
+			<div class="col-3" id="abs1" >
+				<p >Weather</p>
+			</div>
+			<div class="col-6" id="abs2">
+				<p >Heat wave sweeps India:Seven states witness temperatures > 45°C</p>
+
+			</div>
+		</div>
+
+		<div class="col-3" id="add">
+			<img src="img/add2.gif" alt="add">
+		</div>
+
+	</div>
+
+
+	<!--News and single blogpost-->
+	<div class="row">
+		<div class="col-8" >
+			<a href="news1.html"><img  class="responsive" src="img/home1.jpg"></a>
+
+			<a href="news2.html"><img  class="responsive" src="img/home2.jpg"></a>
+		
+			<a href="news3.html"><img  class="responsive" src="img/home3.jpg"></a>
+		</div>
+
+		<div class="col-4" id="blog" >
+			<div class="col-1" id="blog1" >
+					<img src="img/blog2.jpg">
+			</div>
+			<div id="blog2">
+				<a href="blog1.html"><li><h3>National News</h3>Key constituencies in final phase of Lok Sabha polls </li></a>
+			</div>
+		</div>
+		<div class="col-4" id="blog" >
+			<div class="col-1" id="blog1" >
+					<img src="img/blog1.jpg">
+			</div>
+			<div id="blog2">
+				<a href="blog2.html"><li><h3>Financial News</h3>Financial institutions set to realise Rs 80,000 crore from IBC in FY20:ICRA</li></a>
+			</div>
+		</div>
+		<div class="col-4" id="blog" >
+			<div class="col-1" id="blog1" >
+					<img src="img/blog5.jpg">
+			</div>
+			<div id="blog2">
+				<a href="blog3.html"><li><h3>Businuess</h3>Indian Oil to examine US sanction's impact on CPCL expansion
+				</li></a>
+			</div>
+		</div>
+		<div class="col-4" id="blog" >
+			<div class="col-1" id="blog1" >
+					<img src="img/blog4.jpg">
+			</div>
+			<div id="blog2">
+				<a href="blog4.html"><li><h3>Technology</h3>Blockchain may make e-commerce cheaper, fairer</li></a>
+			</div>
+		</div>
+		<div class="col-4" id="blog" >
+			<div class="col-1" id="blog1" >
+					<img src="img/blog3.jpg">
+			</div>
+			<div id="blog2">
+				<a href="blog5.html"><li><h3>Entertainment</h3>'Game of Thrones' fans aren't happy with this final season</li></a>
+			</div>
+		</div>
+		<!--Newsletter-->
+		<div class="col-4" id="newsletter" >
+			<h4>Newsletter</h4>
+			<form>
+				<label>Name</label>
+				<input type="text"><br><br>
+				<label>E-mail </label>
+				<input type="text"><br><br>
+				<label>Phone</label>
+				<input type="text">
+			</form>
+			<h5>Subcribe</h5>
+		</div>
+	</div>
+
+	<footer>
+      <h3 align="center">"Copyright &copy; Updated. All Rights Reserved | Contact Us: +91 90000 00000"</h3>
+  </footer>
+
+</body>
+</html>

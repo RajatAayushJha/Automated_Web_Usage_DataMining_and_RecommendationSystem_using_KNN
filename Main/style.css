@@ -1,0 +1,352 @@
+body {
+	margin: 0;
+	font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+li{
+	list-style-type: none;
+}
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.topnav h2 {
+	float: left;
+	padding-left: 12px;
+	color: #f1f1f1;
+	font-style: italic;
+
+}
+
+ul.topnav li a{
+	float: right;
+	color: white;
+	padding: 14px 12px;
+	text-align:center;
+	text-decoration-line: none;
+	
+}
+
+ul.topnav input{
+	float: right;
+	margin-top: 14px;
+	margin-right: 12px;
+	border-radius: 5px;
+	}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li a,ul.topnav input,ul.topnav h2{
+  	float: none;
+  }
+}
+
+ul.nav {
+	background-color: #f1f1f1;
+	margin: 0;
+	list-style-type: none;
+	overflow: hidden;
+}
+
+ul.nav li a{
+	float: left;
+	color: #333;
+	padding:20px;
+	text-decoration: none;
+	text-align: center;	
+}
+
+ul.nav li a:hover{
+	background-color: white;
+}
+
+@media screen and (max-width: 600px) {
+  ul.nav li a{
+  	float: none;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+ padding: 5px;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+
+#abs1{
+	background-color: crimson;
+	font-size: 16px;
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	padding: 0;
+}
+
+@keyframes example {
+  from {color: crimson;}
+  to {color: white;}
+}
+
+#abs2{
+	background-color: black;
+	color: white;
+	font-size: 16px;
+	font-style: bolder;
+	padding: 0px 0px 0px 4px;
+	animation-name: example;
+	animation: example infinite;
+  animation-duration: 2s;
+
+}
+
+#add{
+	margin-top: -20px;
+	margin-left: -40px;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  #add{
+   margin-top: -5px;
+   margin-left: 0px;
+   max-width: 25px;
+  }
+}
+
+#blog{
+	/*background-color: black;*/
+	padding: 0;
+	margin: 0;
+	border-bottom: solid;
+	border-width: 0.5px;
+	border-color: crimson;
+
+	
+}
+#blog1{
+	/*background-color: yellow;*/
+	width: 105px;
+}
+#blog2{
+	/*background-color: pink;*/
+	max-width: 345px;
+	margin-left: 105px;
+	margin-top: 3px;
+}
+#blog2 li{
+	color: black;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+#blog2 a:link {
+    text-decoration: none;
+
+}
+
+#blog2 a:visited {
+    text-decoration: none;
+}
+
+#blog2 a:hover {
+    text-decoration: underline black;
+}
+
+#blog2 a:active {
+    text-decoration: underline;
+}
+
+#newsletter{
+	background-color: #010101;
+	width: 345px;
+	height: 350px;
+	margin-top: 70px;
+}
+
+#newsletter h4{
+	border-style: solid black;
+	background-color:crimson;
+	padding: 5px;
+	text-align:center;
+}
+
+#newsletter label{
+	color: white;
+	padding: 5px;
+}
+
+#newsletter input{
+	border-radius: 5px;
+	border-style: solid;
+	padding: 5px;
+}
+
+#newsletter h5{ 
+	background-color: crimson;
+	border-style: solid;
+	padding: 10px;
+	text-align: center;
+	border-radius: 10px;
+	margin: 30px 0px 0px 50px;
+	width: 70%;
+}
+
+footer{
+	 background-color: #000;     
+	 color:#fff;     
+	 font-size:14px;
+	 clear: both;
+    position: relative;
+    height: 40px;
+    margin-top: -40px;
+}
+
+.form-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 15px;
+  border: 1px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 400px;
+  padding: 5px;
+  background-color: #333; 
+  color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: crimson;
+  color: black;
+  font-weight: bold;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 1;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: crimson;
+  color: black;
+  font-weight: bold;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 0.8;
+}
+
+#signup input[type=text]{
+	padding: 12px;
+	margin:12px;
+	width: 50%;
+	border-radius: 10px;
+	border-style: 2px solid #333;
+}
+
+#signup input[type=submit]{
+
+	background-color: crimson;
+	font-weight: bolder;
+	padding: 12px;
+	width: 50%;
+	position: relative;
+	border-radius: 10px;
+	margin: 0px 0px 50px 310px;
+	opacity: 1;
+}
+
+#signup input[type=submit]:hover{
+	opacity: 0.8;
+}
+
+.fa{
+	padding:20px;
+	font-size: 30px;
+	text-align: center;
+	border-radius: 50px;
+	margin: 0px 20px 40px 0px;
+}
+.fa:hover{
+	opacity: 0.7;
+}
+.fa-facebook{
+	background: #3B5998;
+	color: white;
+}
+
+.fa-twitter{
+	background: #55ACEE;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+.fa-whatsapp{
+	background-color: #00FF00;
+	color: white;
+}
+
+.responsive{
+	 width: 100%;
+  height: auto;
+}
